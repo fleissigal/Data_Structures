@@ -1,28 +1,32 @@
+import java.util.Arrays;
+
 /**
  * Created by GalFleissig on 11/09/2021.
  */
 
 
 public class StringBuilder {
-    private int size;
     private char[] value;
     private int indexValueEnds;
 
-    private static final int initValueSize = 30;
+    private static final int initValueSize = 7;
 
     public StringBuilder() {
         this.value = new char[initValueSize];
-        this.size = initValueSize;
-        this.indexValueEnds = 0;
+        this.indexValueEnds = -1;
     }
 
-    public void setIndexValueEnds(int index_value_ends) {
-        this.indexValueEnds = index_value_ends;
+    public void setIndexValueEnds(int indexValueEnds) {
+        this.indexValueEnds = indexValueEnds;
+    }
+
+    public void setValue(char[] newValue) {
+        this.value = newValue;
     }
 
     public void append(String str) {
 //        If adding the new string won't exceed the size of the StringBuilder, then insert
-            if (str.length() <= this.size - this.indexValueEnds - 1) {
+            if (str.length() <= this.value.length - this.indexValueEnds - 1) {
                 this.addNewString(str);
             } else {
 //        Otherwise expand (make sure can accommodate for the change)
@@ -33,7 +37,10 @@ public class StringBuilder {
 
 //    The function that expands the size of the char[]
     private void expand(int addAtLeast) {
-
+        int numToAdd = addAtLeast;
+        if (numToAdd < this.value.length) numToAdd = this.value.length;
+        char[] newArray = Arrays.copyOf(this.value, this.value.length + numToAdd);
+        this.setValue(newArray);
     }
 
     private void addNewString(String str) {
@@ -44,7 +51,8 @@ public class StringBuilder {
     }
 
     public void print() {
-
+        System.out.print(this.value);
+        System.out.print('\n');
     }
 
 }

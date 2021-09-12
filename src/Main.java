@@ -7,9 +7,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Function<Integer, Integer> hash_function = (Integer n) -> {
-            return n % 10;
-        };
+//        Testing HashTable
+
+        Function<Integer, Integer> hash_function = (Integer n) -> n % 10;
 
         HashTable table = new HashTable(hash_function, 10);
 
@@ -22,6 +22,22 @@ public class Main {
         table.print_table();
 
 
+//        Testing StringBuilder
+
+        StringBuilder sb = new StringBuilder();
+        sb.print();
+
+        String first = "hello,";
+        sb.append(first);
+        sb.print();
+
+        String second = " world!";
+        sb.append(second);
+        sb.print();
+
+        String third = " Period.";
+        sb.append(third);
+        sb.print();
     }
 
 }

@@ -9,12 +9,12 @@ public class ArrayList {
     private int[] array;
     private int indexHead;
 
-    private static final int initValueSize = 4;
+    private static final int initArraySize = 4;
     private static final int expansionFactor = 2;
 
     //    Constructor
     public ArrayList() {
-        this.array = new int[initValueSize];
+        this.array = new int[initArraySize];
         this.indexHead = 0;
     }
 

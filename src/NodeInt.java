@@ -1,19 +1,19 @@
 /**
  * Created by GalFleissig on 06/12/2018.
  */
-public class Node {
+public class NodeInt {
     private int data;
-    private Node next;
+    private NodeInt next;
 
-    public Node(int data) {
+    public NodeInt(int data) {
         this.data = data;
     }
 
-    public void set_next(Node next) {
+    public void set_next(NodeInt next) {
         this.next = next;
     }
 
-    public Node get_next() {
+    public NodeInt get_next() {
         return this.next;
     }
 

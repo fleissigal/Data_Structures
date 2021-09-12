@@ -57,6 +57,24 @@ public class Main {
         arr.push(60);
         arr.print();
 
+        System.out.print(arr.pop());
+        System.out.print('\n');
+        System.out.print(arr.pop());
+        System.out.print('\n');
+        System.out.print(arr.pop());
+        System.out.print('\n');
+
+
+        System.out.print(arr.elementAt(2));
+        System.out.print('\n');
+        System.out.print(arr.elementAt(4));
+        System.out.print('\n');
+        System.out.print(arr.elementAt(5));
+        System.out.print('\n');
+
+        arr.push(313);
+        arr.print();
+
     }
 
 }

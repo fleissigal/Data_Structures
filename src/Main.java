@@ -38,6 +38,25 @@ public class Main {
         String third = " Period.";
         sb.append(third);
         sb.print();
+
+//        Testing ArrayList
+
+        ArrayList arr = new ArrayList();
+        arr.print();
+
+        arr.push(1);
+        arr.push(3);
+        arr.push(6);
+        arr.push(0);
+        arr.print();
+
+        arr.push(5);
+        arr.push(99);
+        arr.push(64);
+        arr.push(2);
+        arr.push(60);
+        arr.print();
+
     }
 
 }

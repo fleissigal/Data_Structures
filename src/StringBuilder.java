@@ -11,11 +11,13 @@ public class StringBuilder {
 
     private static final int initValueSize = 7;
 
+//    Constructor
     public StringBuilder() {
         this.value = new char[initValueSize];
         this.indexValueEnds = -1;
     }
 
+//    Setters
     public void setIndexValueEnds(int indexValueEnds) {
         this.indexValueEnds = indexValueEnds;
     }
@@ -24,6 +26,16 @@ public class StringBuilder {
         this.value = newValue;
     }
 
+//    Getters
+    public char[] getValue() {
+        return this.value;
+    }
+
+    public int getIndexValueEnds() {
+        return this.indexValueEnds;
+    }
+
+//    Functions
     public void append(String str) {
 //        If adding the new string won't exceed the size of the StringBuilder, then insert
             if (str.length() <= this.value.length - this.indexValueEnds - 1) {
@@ -43,6 +55,7 @@ public class StringBuilder {
         this.setValue(newArray);
     }
 
+//    The function that does the actual concatenating of the new string
     private void addNewString(String str) {
         for (int i = 0; i < str.length(); i++) {
             this.value[this.indexValueEnds + 1 + i] = str.charAt(i);
@@ -50,6 +63,7 @@ public class StringBuilder {
         this.setIndexValueEnds(this.indexValueEnds + str.length());
     }
 
+//    Print the current string
     public void print() {
         System.out.print(this.value);
         System.out.print('\n');

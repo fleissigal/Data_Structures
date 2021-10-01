@@ -108,6 +108,43 @@ public class Main {
         System.out.print('\n');
         System.out.print('\n');
 
+//        Testing Stack
+        System.out.print("TESTING Stack\n\n");
+
+        Stack stack = new Stack();
+
+        stack.pushItem(5);
+        stack.pushItem(3);
+        stack.pushItem(9);
+        stack.pushItem(12);
+        stack.pushItem(11);
+
+        stack.print();
+        System.out.print('\n');
+
+        System.out.print(stack.pop());
+        System.out.print('\n');
+        System.out.print(stack.peek());
+        System.out.print('\n');
+        System.out.print(stack.isEmpty());
+        System.out.print('\n');
+        System.out.print(stack.pop());
+        System.out.print('\n');
+        System.out.print(stack.pop());
+        System.out.print('\n');
+        System.out.print(stack.pop());
+        System.out.print('\n');
+        System.out.print(stack.isEmpty());
+        System.out.print('\n');
+        System.out.print(stack.peek());
+        System.out.print('\n');
+        System.out.print(stack.pop());
+        System.out.print('\n');
+        System.out.print(stack.peek());
+        System.out.print('\n');
+        System.out.print(stack.isEmpty());
+        System.out.print('\n');
+        System.out.print('\n');
     }
 
 }

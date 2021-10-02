@@ -1,3 +1,4 @@
+import java.util.EmptyStackException;
 import java.util.Vector;
 import java.util.function.Function;
 
@@ -21,7 +22,7 @@ public class Stack {
         return peek_pop_aux("pop");
     }
 
-    public void pushItem(int item) {
+    public void push(int item) {
 //         If exceeding length of array: need to expand array
         if (idx == numOfCells) {
             this.numOfCells *= 2;

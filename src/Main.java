@@ -113,11 +113,11 @@ public class Main {
 
         Stack stack = new Stack();
 
-        stack.pushItem(5);
-        stack.pushItem(3);
-        stack.pushItem(9);
-        stack.pushItem(12);
-        stack.pushItem(11);
+        stack.push(5);
+        stack.push(3);
+        stack.push(9);
+        stack.push(12);
+        stack.push(11);
 
         stack.print();
         System.out.print('\n');
@@ -143,6 +143,44 @@ public class Main {
         System.out.print(stack.peek());
         System.out.print('\n');
         System.out.print(stack.isEmpty());
+        System.out.print('\n');
+        System.out.print('\n');
+
+//        Testing Queue
+        System.out.print("TESTING Queue\n\n");
+
+        Queue queue = new Queue();
+
+        queue.push(5);
+        queue.push(3);
+        queue.push(9);
+        queue.push(12);
+        queue.push(11);
+
+        queue.print();
+        System.out.print('\n');
+
+        System.out.print(queue.pop());
+        System.out.print('\n');
+        System.out.print(queue.peek());
+        System.out.print('\n');
+        System.out.print(queue.isEmpty());
+        System.out.print('\n');
+        System.out.print(queue.pop());
+        System.out.print('\n');
+        System.out.print(queue.pop());
+        System.out.print('\n');
+        System.out.print(queue.pop());
+        System.out.print('\n');
+        System.out.print(queue.isEmpty());
+        System.out.print('\n');
+        System.out.print(queue.peek());
+        System.out.print('\n');
+        System.out.print(queue.pop());
+        System.out.print('\n');
+        System.out.print(queue.peek());
+        System.out.print('\n');
+        System.out.print(queue.isEmpty());
         System.out.print('\n');
         System.out.print('\n');
     }

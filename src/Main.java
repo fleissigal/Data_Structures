@@ -183,6 +183,55 @@ public class Main {
         System.out.print(queue.isEmpty());
         System.out.print('\n');
         System.out.print('\n');
+
+
+//        Testing SetOfStacks
+        System.out.print("TESTING SetOfStacks\n\n");
+
+        SetOfStacks setOfStacks = new SetOfStacks();
+
+        setOfStacks.push(5);
+        setOfStacks.push(3);
+        setOfStacks.push(9);
+        setOfStacks.push(12);
+        setOfStacks.push(11);
+        setOfStacks.push(8);
+        setOfStacks.push(6);
+        setOfStacks.push(18);
+        setOfStacks.push(20);
+
+        setOfStacks.print();
+        System.out.print('\n');
+
+        System.out.print(setOfStacks.popAt(1));
+        System.out.print('\n');
+        System.out.print(setOfStacks.pop());
+        System.out.print('\n');
+        System.out.print(setOfStacks.peek());
+        System.out.print('\n');
+        System.out.print(setOfStacks.isEmpty());
+        System.out.print('\n');
+        System.out.print(setOfStacks.pop());
+        System.out.print('\n');
+        System.out.print(setOfStacks.pop());
+        System.out.print('\n');
+        System.out.print(setOfStacks.popAt(0));
+        System.out.print('\n');
+        setOfStacks.print();
+        System.out.print('\n');
+        System.out.print(setOfStacks.pop());
+        System.out.print('\n');
+        System.out.print(setOfStacks.isEmpty());
+        System.out.print('\n');
+        System.out.print(setOfStacks.peek());
+        System.out.print('\n');
+        System.out.print(setOfStacks.pop());
+        System.out.print('\n');
+        System.out.print(setOfStacks.peek());
+        System.out.print('\n');
+        System.out.print(setOfStacks.isEmpty());
+        System.out.print('\n');
+        System.out.print('\n');
     }
 
 }
